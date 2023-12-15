@@ -47,3 +47,26 @@ void Draw(char** num1, int  x, int y) {
     }
     cout << "+---+---+---+" << endl;
 }
+bool WhoIsWinner(int size, char** field, char ch) {
+    int countX = 0, countO = 0;
+    int combI[8][3]{
+        {0,0,0},
+        {1,1,1},
+        {2,2,2},
+        {0,1,2},
+        {0,1,2},
+        {0,1,2},
+        {0,1,2},
+        {0,1,2}
+    };
+    int combJ[8][3]{
+        {0,1,2},
+        {0,1,2},
+        {0,1,2},
+        {0,0,0},
+        {1,1,1},
+        {2,2,2},
+        {0,1,2},
+        {2,1,0}
+
+    };
